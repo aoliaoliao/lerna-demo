@@ -1,6 +1,17 @@
-{
+{ 
+  "version": "independent",
   "packages": [
     "packages/*"
-  ],
-  "version": "0.0.2"
+  ],  
+  "commands": {
+    "publish": {
+      "ignore": [
+        "ignored-file",
+        "*.md"
+      ]
+    },
+    "bootstrap": {
+      "ignore": "component-*"
+    }
+  }
 }
